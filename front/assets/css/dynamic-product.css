@@ -1,0 +1,123 @@
+    /* HIDE RADIO */
+    [class^="radioVariation-"]{
+        text-align: center;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    [class^="radioVariation-"] input[type=radio]{
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    /* IMAGE STYLES */
+    [class^="radioVariation-"] img {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+    }
+    
+    .content-colors div {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+    }
+    
+    [class^="radioVariation-"] picture {
+      position: relative;
+      display: inline-block;
+    }
+
+    [class^="radioVariation-"] input:checked+picture::before, .content-colors input:checked+picture::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/1200px-Light_green_check.svg.png') no-repeat;
+      background-size: contain;
+    }
+
+    .content-colors input[type=radio]{
+      height: 0;
+      width: 0;
+    }
+    
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+    .tooltip .tiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 3px;
+        padding: 3px 5px;
+        position: absolute;
+        z-index: 1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+    .tooltip .tiptext::after {
+        content: "";
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+    }
+    .tooltip:hover .tiptext {
+        visibility: visible;
+    }
+    
+    .tooltip.top .tiptext{
+        margin-left: -60px;
+        bottom: 100%;
+        left: 50%;
+    }
+    .tooltip.top .tiptext::after{
+        margin-left: -5px;
+        top: 100%;
+        left: 50%;
+        border-color: #2E2E2E transparent transparent transparent;
+    }
+    
+    .sw>.tab-content>.tab-pane {
+        margin-top: 40px !important;
+    }
+
+    img.zoomImg, a.woocommerce-product-gallery__trigger{
+        display: none !important;
+    }
+
+    div[class^="radioColor-"]{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .btnColores{
+      margin-bottom: 10px;
+      width: 100%;
+      display: none;
+    }
+
+    .swal2-html-container{
+      padding-top: 30px !important;
+      margin-top: 0 !important;
+    }
+  
+    .cont-variations{
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+      width: 70px;
+      margin: 5px;
+    }
+
+  
